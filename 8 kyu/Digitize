@@ -1,0 +1,13 @@
+#You have to return the digits of this number within an array in reverse order.
+
+def digitize(n):
+    list = []
+    for i in str(n):
+        list.append(int(i))
+    list.reverse()
+    return list
+    
+OR
+
+def digitize(n):
+    return map(int, str(n)[::-1])
