@@ -1,0 +1,3 @@
+#write program to sum interior angles of n-sided polygon
+def angle(n):
+  return 180 * (n-2)
