@@ -1,0 +1,14 @@
+#return alphabet position with string of ints for a given phrase
+
+def alphabet_position(text):
+    ans = ''
+    code = list('abcdefghijklmnopqrstuvwxyz')
+    for char in text:
+      if char.isalpha():
+        ans += str(code.index(char.lower()) + 1) + ' '
+    return ans[0:len(ans)-1]
+    
+OR
+
+def alphabet_position(text):
+    return ' '.join(str(ord(c) - 96) for c in text.lower() if c.isalpha())
