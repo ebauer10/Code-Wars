@@ -1,0 +1,7 @@
+#given a string, return the length of the shortest word
+
+def find_short(s):
+  mins = min(len(word) for word in s.split())
+  return mins
+  
+  
